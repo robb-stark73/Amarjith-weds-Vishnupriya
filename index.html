@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Amarjith & Vishnupriya — Wedding</title>
+  <meta name="description" content="Wedding celebration of Amarjith and Vishnupriya." />
+  <style>
+    :root {
+      --ink: #20382f;
+      --cream: #f7f3e8;
+      --gold: #bc963b;
+      --sage: #8da48d;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 15% 20%, rgba(188, 150, 59, .12), transparent 24rem),
+        linear-gradient(135deg, #fbfaf4, var(--cream));
+    }
+
+    .page {
+      min-height: 100vh;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      padding: clamp(1rem, 3vw, 2.5rem);
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid rgba(32, 56, 47, .18);
+      padding-bottom: 1rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      font-size: .75rem;
+    }
+
+    main {
+      display: grid;
+      place-items: center;
+      text-align: center;
+      padding: 5rem 1rem;
+    }
+
+    .invitation {
+      position: relative;
+      max-width: 760px;
+    }
+
+    .monogram {
+      width: 74px;
+      height: 74px;
+      margin: 0 auto 2rem;
+      display: grid;
+      place-items: center;
+      border: 1px solid var(--gold);
+      border-radius: 50%;
+      color: var(--gold);
+      font-size: 1.25rem;
+      letter-spacing: .08em;
+    }
+
+    .eyebrow {
+      margin: 0 0 1.25rem;
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: .28em;
+      font-family: Arial, sans-serif;
+      font-size: .75rem;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(3.5rem, 10vw, 7.5rem);
+      font-weight: 400;
+      line-height: .88;
+      letter-spacing: -.055em;
+    }
+
+    h1 span {
+      display: block;
+      margin: .22em 0;
+      color: var(--gold);
+      font-size: .28em;
+      font-style: italic;
+      letter-spacing: 0;
+    }
+
+    .details {
+      width: fit-content;
+      margin: 2.5rem auto 0;
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      font-family: Arial, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: .18em;
+      font-size: clamp(.68rem, 2vw, .82rem);
+    }
+
+    .details i {
+      width: 38px;
+      height: 1px;
+      background: var(--gold);
+    }
+
+    footer {
+      text-align: center;
+      color: rgba(32, 56, 47, .65);
+      font-size: .8rem;
+      font-style: italic;
+    }
+
+    @media (max-width: 520px) {
+      header span:last-child { display: none; }
+      main { padding: 3.5rem 0; }
+      .details { gap: .7rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <span>Amarjith & Vishnupriya</span>
+      <span>Wedding Celebration</span>
+    </header>
+
+    <main>
+      <section class="invitation" aria-label="Wedding invitation">
+        <div class="monogram" aria-hidden="true">A<span aria-hidden="true">&amp;</span>V</div>
+        <p class="eyebrow">Together with their families</p>
+        <h1>
+          Amarjith
+          <span>&</span>
+          Vishnupriya
+        </h1>
+        <div class="details">
+          <span>The Wedding</span>
+          <i aria-hidden="true"></i>
+          <span>Forever Begins</span>
+        </div>
+      </section>
+    </main>
+
+    <footer>Two hearts · One beautiful journey</footer>
+  </div>
+</body>
+</html>
